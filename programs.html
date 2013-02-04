@@ -5,8 +5,29 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<link rel="shortcut icon" href="css/images/favicon.ico" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-
-
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+  <style>
+  #accordion-resizer {
+    padding: 10px;
+    height: 820px;
+  }
+  </style>
+<script>
+  $(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "fill"
+    });
+  });
+  $(function() {
+    $( "#accordion-resizer" ).resizable({
+      minHeight: 140,
+      resize: function() {
+        $( "#accordion" ).accordion( "refresh" );
+      }
+    });
+  });
+  </script>
 </head>
 <body>
 <div class="header">
@@ -65,45 +86,99 @@
 		<h2>Top-tier loan programs.</h2>
 		<p class="lede">As a full-service loan banker and broker, we offer a full host of loan programs.</p>
 			</div>
-			<div class="center">
-				<div class="programs" >
-					<div class="programs-row"><h3 class="table">Thirty-Year Fixed Rate Mortgage </h3>
+			<div class="ui-widget-content center" id="accordion-resizer" >
+
+				<dl id="accordion" class="programs" >
+					<dt><h3 class="table">Thirty-Year Fixed Rate Mortgage </h3></dt>
+					<dd>
 							<p>
 								The traditional 30-year fixed-rate mortgage has a constant interest rate and monthly payments that never change.
 								This may be a good choice if you plan to stay in your home for seven years or longer. If you plan to move within seven years,
 								then adjustable-rate loans are usually cheaper. As a rule of thumb, it may be harder to qualify for fixed-rate loans than for
 								adjustable rate loans. When interest rates are low, fixed-rate loans are generally not that much more expensive than
-								adjustable-rate mortgages and may be a better deal in the long run, because you can lock in the rate for the life of your loan.</p>
+								adjustable-rate mortgages and may be a better deal in the long run, because you can lock in the rate for the life of your loan.
+								<br><br>
+								The traditional 30-year fixed-rate mortgage has a constant interest rate and monthly payments that never change.
+								This may be a good choice if you plan to stay in your home for seven years or longer. If you plan to move within seven years,
+								then adjustable-rate loans are usually cheaper. As a rule of thumb, it may be harder to qualify for fixed-rate loans than for
+								adjustable rate loans. When interest rates are low, fixed-rate loans are generally not that much more expensive than
+								adjustable-rate mortgages and may be a better deal in the long run, because you can lock in the rate for the life of your loan.
+								<br><br>
+								The traditional 30-year fixed-rate mortgage has a constant interest rate and monthly payments that never change.
+								This may be a good choice if you plan to stay in your home for seven years or longer. If you plan to move within seven years,
+								then adjustable-rate loans are usually cheaper. As a rule of thumb, it may be harder to qualify for fixed-rate loans than for
+								adjustable rate loans. When interest rates are low, fixed-rate loans are generally not that much more expensive than
+								adjustable-rate mortgages and may be a better deal in the long run, because you can lock in the rate for the life of your loan.
+								<br><br>
+								The traditional 30-year fixed-rate mortgage has a constant interest rate and monthly payments that never change.
+								This may be a good choice if you plan to stay in your home for seven years or longer. If you plan to move within seven years,
+								then adjustable-rate loans are usually cheaper. As a rule of thumb, it may be harder to qualify for fixed-rate loans than for
+								adjustable rate loans. When interest rates are low, fixed-rate loans are generally not that much more expensive than
+								adjustable-rate mortgages and may be a better deal in the long run, because you can lock in the rate for the life of your loan.
+								<br><br>Ready to get a loan started? We'll help you <a href="">Find a Loan Officer!</a></p>
+					</dd>
+					<dt><h3 class="table">Fifteen-Year Fixed Rate Mortgage</h3></dt>
+					<dd>
+						<p>
+								The traditional 30-year fixed-rate mortgage has a constant interest rate and monthly payments that never change.
+								This may be a good choice if you plan to stay in your home for seven years or longer. If you plan to move within seven years,
+								then adjustable-rate loans are usually cheaper. As a rule of thumb, it may be harder to qualify for fixed-rate loans than for
+								adjustable rate loans. When interest rates are low, fixed-rate loans are generally not that much more expensive than
+								adjustable-rate mortgages and may be a better deal in the long run, because you can lock in the rate for the life of your loan.
+								<br><br>Ready to get a loan started? We'll help you <a href="">Find a Loan Officer!</a></p>
+					</dd>
+					<dt><h3 class="table">Hybrid ARM (3/1 ARM, 5/1 ARM, 7/1 ARM)</h3></dt>
+					<dd>
+						<p>
+								The traditional 30-year fixed-rate mortgage has a constant interest rate and monthly payments that never change.
+								This may be a good choice if you plan to stay in your home for seven years or longer. If you plan to move within seven years,
+								then adjustable-rate loans are usually cheaper. As a rule of thumb, it may be harder to qualify for fixed-rate loans than for
+								adjustable rate loans. When interest rates are low, fixed-rate loans are generally not that much more expensive than
+								adjustable-rate mortgages and may be a better deal in the long run, because you can lock in the rate for the life of your loan.
+								<br><br>Ready to get a loan started? We'll help you <a href="">Find a Loan Officer!</a></p>
+					</dd>
+					<dt><h3 class="table">Adjustable Rate Mortgages (ARM)</h3></dt>
+					<dd>
+						<p>
+								The traditional 30-year fixed-rate mortgage has a constant interest rate and monthly payments that never change.
+								This may be a good choice if you plan to stay in your home for seven years or longer. If you plan to move within seven years,
+								then adjustable-rate loans are usually cheaper. As a rule of thumb, it may be harder to qualify for fixed-rate loans than for
+								adjustable rate loans. When interest rates are low, fixed-rate loans are generally not that much more expensive than
+								adjustable-rate mortgages and may be a better deal in the long run, because you can lock in the rate for the life of your loan.
+								<br><br>Ready to get a loan started? We'll help you <a href="">Find a Loan Officer!</a></p>
+					</dd>
+					<dt><h3 class="table">2/1 Buy Down Mortgage</h3></dt>
+					<dd>
+						<p>
+								The traditional 30-year fixed-rate mortgage has a constant interest rate and monthly payments that never change.
+								This may be a good choice if you plan to stay in your home for seven years or longer. If you plan to move within seven years,
+								then adjustable-rate loans are usually cheaper. As a rule of thumb, it may be harder to qualify for fixed-rate loans than for
+								adjustable rate loans. When interest rates are low, fixed-rate loans are generally not that much more expensive than
+								adjustable-rate mortgages and may be a better deal in the long run, because you can lock in the rate for the life of your loan.
+								<br><br>Ready to get a loan started? We'll help you <a href="">Find a Loan Officer!</a></p>
+					</dd>
+					<dt><h3 class="table">Annual ARM</h3></dt>
+					<dd>
+						<p>
+								The traditional 30-year fixed-rate mortgage has a constant interest rate and monthly payments that never change.
+								This may be a good choice if you plan to stay in your home for seven years or longer. If you plan to move within seven years,
+								then adjustable-rate loans are usually cheaper. As a rule of thumb, it may be harder to qualify for fixed-rate loans than for
+								adjustable rate loans. When interest rates are low, fixed-rate loans are generally not that much more expensive than
+								adjustable-rate mortgages and may be a better deal in the long run, because you can lock in the rate for the life of your loan.
+								<br><br>Ready to get a loan started? We'll help you <a href="">Find a Loan Officer!</a></p>
+					</dd>
+					<dt><h3 class="table">Monthly ARM</h3></dt>
+					<dd>
+						<p>
+								The traditional 30-year fixed-rate mortgage has a constant interest rate and monthly payments that never change.
+								This may be a good choice if you plan to stay in your home for seven years or longer. If you plan to move within seven years,
+								then adjustable-rate loans are usually cheaper. As a rule of thumb, it may be harder to qualify for fixed-rate loans than for
+								adjustable rate loans. When interest rates are low, fixed-rate loans are generally not that much more expensive than
+								adjustable-rate mortgages and may be a better deal in the long run, because you can lock in the rate for the life of your loan.
+								<br><br>Ready to get a loan started? We'll help you <a href="">Find a Loan Officer!</a></p>
+					</dd>
 
-						<p>Ready to get a loan started? We'll help you <a href="">Find a Loan Officer!</a></p>
-					</div>
-					<div class="programs-row"><h3 class="table">Fifteen-Year Fixed Rate Mortgage</h3>
-					</div>
-					<div class="programs-row"><h3 class="table">Hybrid ARM (3/1 ARM, 5/1 ARM, 7/1 ARM)</h3>
-					</div>
-					<div class="programs-row"><h3 class="table">Adjustable Rate Mortgages (ARM)</h3>
-					</div>
-					<div class="programs-row"><h3 class="table">2/1 Buy Down Mortgage</h3>
-					</div>
-					<div class="programs-row"><h3 class="table">Annual ARM</h3>
-					</div>
-					<div class="programs-row"><h3 class="table">Monthly ARM</h3>
-					</div>
-
-				</div>
-
-<dl class="accordion">
-
-<dt><a href="">Panel 1</a></dt>
-<dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
-
-<dt><a href="">Panel 2</a></dt>
-<dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
-
-<dt><a href="">Panel 3</a></dt>
-<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
-
-</dl>
+				</dl>
 
 				</div>
 	</div>
